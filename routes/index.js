@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../views/index.html"));
 });
 
-app.get("/s", (req, res) => {
+router.get("/s", (req, res) => {
   res.send("¡Hola Mundosssss!");
 });
 
