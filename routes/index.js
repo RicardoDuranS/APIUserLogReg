@@ -1,10 +1,14 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+const path = require("path");
 const router = express.Router();
 
 // Serve the index.html file for the root route
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../views/index.html'));
+router.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../views/index.html"));
+});
+
+app.get("/s", (req, res) => {
+  res.send("¡Hola Mundosssss!");
 });
 
 module.exports = router;
