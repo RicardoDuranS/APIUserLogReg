@@ -18,7 +18,7 @@ router.post("/insertStudent/:name/:password", async (req, res) => {
 
   try {
     const queryText =
-      "INSERT INTO public.usuarios (name, password) VALUES ($1, $2)";
+      "INSERT INTO public.users (name, password) VALUES ($1, $2)";
     const values = [name, password];
 
     await pool.query(queryText, values);
